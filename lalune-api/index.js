@@ -1,9 +1,11 @@
 import express from "express";
 import bodyParser from "body-parser";
 import dotenv from "dotenv";
+import "./database/db.setup.js";
+import personRoutes from "./routes/person.routes.js"
 
 // Use env
-dotenv.config({path: ".env.development"});
+dotenv.config({ path: ".env.development" });
 
 // Initialize the app
 const app = express();
@@ -16,6 +18,8 @@ const port = process.env.PORT
 app.listen(port, () => {
     console.log(`Listening on port ${port}`)
 })
+
+app.use("/api", personRoutes)
 
 
 app.get("/i-like-you", (req, res) => {
