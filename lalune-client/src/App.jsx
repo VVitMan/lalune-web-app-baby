@@ -5,6 +5,7 @@ import Home from './components/Home'
 import About from './components/About'
 import FortuneStick from './components/FortuneStick'
 import Donate from './components/Donate'
+import Dispel from './components/Dispel'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />}/>
+        <Route path='/dispel' element={<Dispel />}/>
         <Route path='/fortune-stick' element={<FortuneStick />}/>
         <Route path='/donate' element={<Donate />}/>
       </Routes>

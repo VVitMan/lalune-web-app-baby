@@ -17,6 +17,13 @@ export default function Navbar() {
             </div>
         </Link>
 
+        {/* Dispel */}
+        <Link to={"/dispel"}>
+            <div className="btn btn-ghost text-sm">
+                <p className="text-red-400">Dispel</p>
+            </div>
+        </Link>
+
         <Link to={"/fortune-stick"}>
             <div className="btn btn-ghost text-sm">
                 <p className="text-red-400">Fortune Stick</p>
@@ -28,6 +35,8 @@ export default function Navbar() {
                 <p className="text-red-400">Donate</p>
             </div>
         </Link>
+
+        
     </div>
   )
 }

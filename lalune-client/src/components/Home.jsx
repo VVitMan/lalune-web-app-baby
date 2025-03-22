@@ -11,10 +11,14 @@ export default function Home() {
               LaLune is the website that we want to help people who do not have a chance to ward off bad luck.
             </p>
             
-            <button className="btn bg-red-400">
-              <p className="text-base-100">Get Started</p>
-            </button>
-
+            {/* Button Get Started Link to Dispel*/}
+            <Link to={"/dispel"}>
+              <button className="btn bg-red-400">
+                <p className="text-base-100">Get Started</p>
+              </button>
+            </Link>
+            
+            {/* Button Donate */}
             <Link to={"/donate"}>
               <button className="btn bg-red-400">
                 <p className="text-base-100">Donate</p>
@@ -24,9 +28,6 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="hero bg-amber-100 min-h-screen">
-        <p>page 2</p>
-      </div>
     </>
   )
 }
